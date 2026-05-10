@@ -1,0 +1,1447 @@
+[
+  {
+    "id": "rzd_01",
+    "name": "РЖД: Поиск билета",
+    "har_path": "benchmark_data/rzd.har",
+    "start_url": "https://www.rzd.ru",
+    "type": "travel",
+    "difficulty": "hard",
+    "goal": "Начни покупку билета в одну сторону и обратно на поезд из Москвы в Санкт-Петербург с 26.06.2026 по 27.06.2026. НЕ НАЖИМАЙ РАЗДЕЛ 'ПОКУПКА БИЛЕТОВ', ты уже в нем. Выбери самый первый доступный маршрут, любой вагон и место и остановись на моменте входа в личный кабинет. НЕ ВЫБИРАЙ ПУНКТ 'КУПИТЬ БИЛЕТ'.",
+    "eval_type": "url_contains",
+    "eval_value": "https://ticket.rzd.ru/booking/rail;route=022/boardin",
+    "checkpoints": [
+      "https://www.rzd.ru/",
+      "https://ticket.rzd.ru/searchresults/v/1/5a323c29340c7441a0a556bb/5a3244bc340c7441a0a556ca/2026-6-26/2026-6-27?adult=1",
+      "https://ticket.rzd.ru/booking/rail;route=022",
+      "https://ticket.rzd.ru/booking/rail;route=022/service",
+      "https://ticket.rzd.ru/booking/rail;route=022/seats",
+      "https://ticket.rzd.ru/booking/rail;route=022/boarding"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-form-field[1]/div/div/rzd-station-suggester/ui-kit-input/div/div/div/input", "action": "type", "text": "Москва"},
+      {"step": 2, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-form-field[2]/div/div/rzd-station-suggester/ui-kit-input/div/div/div/input", "action": "type", "text": "Санкт-Петербург"},
+      {"step": 3, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/div[2]/bkit-datepicker-range-desktop/ui-kit-datepicker-range-desktop/ui-kit-dropdown/div/div", "action": "type", "text": "26.06.2026"},
+      {"step": 4, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/div[2]/ui-kit-form-field[2]/div/div/ui-kit-input/div", "action": "type", "text": "27.06.2026"},
+      {"step": 5, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-button/button", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/rzd-app/main/div/rzd-search-results/div/div/rzd-base-result-theme/div/div/div[2]/rzd-search-results-card-list[1]/div/rzd-search-results-card-railway-flat-card[1]/div/rzd-search-result-railway-trip-card/div/div[3]/div[5]/ui-kit-button[2]/button/div/div[2]", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/rzd-app/main/div/rzd-booking-rail-loading-container/rzd-booking-rail-container/div/div[2]/rzd-railway-service-class-selection-list/rzd-class-selection-footer/div[3]/div/ui-kit-button/button/div/div", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/rzd-app/main/div/rzd-booking-rail-loading-container/rzd-booking-rail-container/div/div[2]/rzd-seats-scheme-container/div/rzd-car-scheme-coupled-container/div[2]/div/rzd-car-scheme-container/rzd-legacy-car-schema/svg/g[4]/path", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/rzd-app/main/div/rzd-booking-rail-loading-container/rzd-booking-rail-container/div/div[2]/rzd-seats-scheme-container/div/rzd-seats-summary-footer/div[3]/div/ui-kit-button/button/div/div", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "rzd_02",
+    "name": "РЖД: Поиск билета",
+    "har_path": "benchmark_data/rzd.har",
+    "start_url": "https://www.rzd.ru",
+    "type": "travel",
+    "difficulty": "hard",
+    "goal": "Начни покупку билета в одну сторону из Москвы в Казань на 19.06.2026. НЕ НАЖИМАЙ РАЗДЕЛ 'ПОКУПКА БИЛЕТОВ', ты уже в нем. Выбери самый быстрый маршрут, любой вагон и место и остановись на моменте входа в личный кабинет. НЕ ВЫБИРАЙ ПУНКТ 'КУПИТЬ БИЛЕТ'.",
+    "eval_type": "url_contains",
+    "eval_value": "https://ticket.rzd.ru/booking/rail;route=056/boarding",
+    "checkpoints": [
+      "https://www.rzd.ru/",
+      "https://ticket.rzd.ru/searchresults/v/1/5a323c29340c7441a0a556bb/5a13bd41340c745ca1e88b55/2026-6-19?adult=1",
+      "https://ticket.rzd.ru/booking/rail;route=056",
+      "https://ticket.rzd.ru/booking/rail;route=056/service",
+      "https://ticket.rzd.ru/booking/rail;route=056/seats",
+      "https://ticket.rzd.ru/booking/rail;route=056/boarding"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-form-field[1]/div/div/rzd-station-suggester/ui-kit-input/div/div/div/input", "action": "type", "text": "Москва"},
+      {"step": 2, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-form-field[2]/div/div/rzd-station-suggester/ui-kit-input/div/div/div/input", "action": "type", "text": "Казань"},
+      {"step": 3, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/div[2]/ui-kit-form-field[1]/div/div/ui-kit-input/div/div[2]/div/input", "action": "type", "text": "19.06.2026"},
+      {"step": 4, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-button/button", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/rzd-app/main/div/rzd-search-results/div/div/rzd-base-result-theme/div/div/div[2]/div[2]/rzd-search-sort-panel/ui-kit-scroll-panel/div/div/ui-kit-tab-group/ui-kit-tab[4]/button/div/div", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/rzd-app/main/div/rzd-search-results/div/div/rzd-base-result-theme/div/div/div[2]/rzd-search-results-card-list/div/rzd-search-results-card-railway-flat-card[1]/div/rzd-search-result-railway-trip-card/div/div[3]/div[5]/ui-kit-button[2]/button/div/div[1]/ui-kit-icon/div/svg", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/rzd-app/main/div/rzd-booking-rail-loading-container/rzd-booking-rail-container/div/div[2]/rzd-railway-service-class-selection-list/rzd-class-selection-footer/div[3]/div/ui-kit-button/button/div/div", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/rzd-app/main/div/rzd-booking-rail-loading-container/rzd-booking-rail-container/div/div[2]/rzd-seats-scheme-container/div/rzd-car-scheme-coupled-container/div[2]/div/rzd-car-scheme-container/rzd-legacy-car-schema/svg/g[4]/path", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/rzd-app/main/div/rzd-booking-rail-loading-container/rzd-booking-rail-container/div/div[2]/rzd-seats-scheme-container/div/rzd-seats-summary-footer/div[3]/div/ui-kit-button/button/div/div", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "rzd_03",
+    "name": "РЖД: Поиск билета",
+    "har_path": "benchmark_data/rzd.har",
+    "start_url": "https://www.rzd.ru",
+    "type": "travel",
+    "difficulty": "easy",
+    "goal": "Начни покупку билета в одну сторону из Магнитогорска в Карталы на 12.06.2026. НЕ НАЖИМАЙ РАЗДЕЛ 'ПОКУПКА БИЛЕТОВ', ты уже в нем. Остановись на списке маршрутов. НЕ ВЫБИРАЙ ПУНКТ 'КУПИТЬ БИЛЕТ'.",
+    "eval_type": "url_contains",
+    "eval_value": "https://ticket.rzd.ru/searchresults/v/1/5a13be03340c745ca1e8b9bb/5a13be10340c745ca1e8bcb0/2026-6-12?adult=1",
+    "checkpoints": [
+      "https://www.rzd.ru/",
+      "https://ticket.rzd.ru/searchresults/v/1/5a13be03340c745ca1e8b9bb/5a13be10340c745ca1e8bcb0/2026-6-12?adult=1"
+      ],
+      "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-form-field[1]/div/div/rzd-station-suggester/ui-kit-input/div", "action": "type", "text": "Магнитогорск"},
+      {"step": 2, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-form-field[2]/div/div/rzd-station-suggester/ui-kit-input/div/div/div/input", "action": "type", "text": "Карталы"},
+      {"step": 3, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/div[2]/ui-kit-form-field[1]/div/div/ui-kit-input/div/div[2]/div/input", "action": "type", "text": "12.06.2026"},
+      {"step": 4, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-button/button/div/div", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "rzd_04",
+    "name": "РЖД: Поиск билета",
+    "har_path": "benchmark_data/rzd.har",
+    "start_url": "https://www.rzd.ru",
+    "type": "travel",
+    "difficulty": "hard",
+    "goal": "Начни покупку билета в одну сторону из Москвы в Нижний Новгород на 19.06.2026. НЕ НАЖИМАЙ РАЗДЕЛ 'ПОКУПКА БИЛЕТОВ', ты уже в нем. Выбери самый быстрый маршрут, любой вагон и место и остановись на моменте входа в личный кабинет. НЕ ВЫБИРАЙ ПУНКТ 'КУПИТЬ БИЛЕТ'.",
+    "eval_type": "url_contains",
+    "eval_value": "https://ticket.rzd.ru/booking/rail;route=705/boarding",
+    "checkpoints": [
+    "https://www.rzd.ru/",
+    "https://ticket.rzd.ru/searchresults/v/1/5a323c29340c7441a0a556bb/5a13ba1a340c745ca1e7d247/2026-6-19?adult=1",
+    "https://ticket.rzd.ru/booking/rail;route=705",
+    "https://ticket.rzd.ru/booking/rail;route=705/service",
+    "https://ticket.rzd.ru/booking/rail;route=705/seats",
+    "https://ticket.rzd.ru/booking/rail;route=705/boarding"
+    ],
+      "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-form-field[1]/div/div/rzd-station-suggester/ui-kit-input/div/div/div/input", "action": "type", "text": "Москва"},
+      {"step": 2, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-form-field[2]/div/div/rzd-station-suggester/ui-kit-input/div/div/div/input", "action": "type", "text": "Нижний Новгород"},
+      {"step": 3, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/div[2]/ui-kit-form-field[1]/div/div/ui-kit-input/div/div[2]/div/input", "action": "type", "text": "19.06.2026"},
+      {"step": 4, "x_path": "html/body/div[1]/header/div[2]/section/div[3]/div/rzd-search-widget/div/rzd-ticket-widget/bkit-route-search/ui-kit-button/button", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/rzd-app/main/div/rzd-search-results/div/div/rzd-base-result-theme/div/div/div[2]/div[2]/rzd-search-sort-panel/ui-kit-scroll-panel/div/div/ui-kit-tab-group/ui-kit-tab[4]/button/div/div", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/rzd-app/main/div/rzd-search-results/div/div/rzd-base-result-theme/div/div/div[2]/rzd-search-results-card-list/div/rzd-search-results-card-railway-flat-card[1]/div/rzd-search-result-railway-trip-card/div/div[3]/div[6]/ui-kit-button[2]/button", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/rzd-app/main/div/rzd-booking-rail-loading-container/rzd-booking-rail-container/div/div[2]/rzd-railway-service-class-selection-list/rzd-class-selection-footer/div[3]/div/ui-kit-button/button/div/div", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/rzd-app/main/div/rzd-booking-rail-loading-container/rzd-booking-rail-container/div/div[2]/rzd-seats-scheme-container/div/rzd-car-scheme-coupled-container/div[3]/div/rzd-car-scheme-container[1]/rzd-legacy-car-schema/svg/g[4]/path", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/rzd-app/main/div/rzd-booking-rail-loading-container/rzd-booking-rail-container/div/div[2]/rzd-seats-scheme-container/div/rzd-seats-summary-footer/div[3]/div/ui-kit-button/button/div/div", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "rzd_05",
+    "name": "РЖД: Часто задаваемые вопросы",
+    "har_path": "benchmark_data/rzd.har",
+    "start_url": "https://www.rzd.ru",
+    "type": "info",
+    "difficulty": "easy",
+    "goal": "Найди раздел с Информацией и там найди часто задаваемые вопросы. Остановись на странице с FAQ.",
+    "eval_type": "url_contains",
+    "eval_value": "https://www.rzd.ru/ru/9837",
+    "checkpoints": [
+      "https://www.rzd.ru/",
+      "https://www.rzd.ru/ru/9273",
+      "https://www.rzd.ru/ru/9837"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/header/div[2]/nav/ul/li[8]/a", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[1]/main/div/section/div/ul/li[1]/a", "action": "click", "text": ""}
+
+    ]
+  },
+  {
+    "id": "rzd_06",
+    "name": "РЖД: Вокзалы — Курский вокзал",
+    "har_path": "benchmark_data/rzd.har",
+    "start_url": "https://www.rzd.ru",
+    "type": "travel",
+    "difficulty": "medium",
+    "goal": "Перейди в раздел «Вокзалы» и найди страницу Курского вокзала в Москве. Остановись на странице Курского вокзала.",
+    "eval_type": "url_contains",
+    "eval_value": "https://www.rzd.ru/ru/11705/page/2012302?id=7#id=3985&name=%D0%9C%D0%9E%D0%A1%D0%9A%D0%92%D0%90%20%D0%9A%D0%A3%D0%A0%D0%A1%D0%9A%D0%90%D0%AF&date=02.05.2026",
+    "checkpoints": [
+      "https://www.rzd.ru/",
+      "https://www.rzd.ru/ru/11705",
+      "https://www.rzd.ru/ru/11705/page/2012302?id=7#id=3985&name=%D0%9C%D0%9E%D0%A1%D0%9A%D0%92%D0%90%20%D0%9A%D0%A3%D0%A0%D0%A1%D0%9A%D0%90%D0%AF&date=02.05.2026"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/header/div[2]/nav/ul/li[3]/a", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[1]/main/div/section[2]/div/div/div/form/div[2]/div[1]/div/label/input", "action": "type", "text": "Курский"},
+      {"step": 3, "x_path": "html/body/div[1]/main/div/section[2]/div/div/div/form/div[2]/div[1]/div/div/div/div[1]", "action": "type", "text": "Москва"},
+      {"step": 4, "x_path": "html/body/div[1]/main/div/section[2]/div/div/div/form/div[2]/div[1]/div/div/div/div[2]/div/ul/li[45]/button/span", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[1]/main/div/section[2]/div/div/div/form/div[2]/div[2]/div/button[2]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "rzd_07",
+    "name": "РЖД: Контакты — полное наименование общества",
+    "har_path": "benchmark_data/rzd.har",
+    "start_url": "https://www.rzd.ru",
+    "type": "info",
+    "difficulty": "easy",
+    "goal": "Перейди в раздел «Контакты» и найди полное наименование общества. Остановись на странице с контактными данными.",
+    "eval_type": "url_contains",
+    "eval_value": "https://contacts.rzd.ru/",
+    "checkpoints": [
+      "https://www.rzd.ru/",
+      "https://contacts.rzd.ru/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/header/div[1]/div[2]/nav[1]/ul[2]/li/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "rzd_08",
+    "name": "РЖД: Правила перевозки ручной клади",
+    "har_path": "benchmark_data/rzd.har",
+    "start_url": "https://www.rzd.ru",
+    "type": "travel",
+    "difficulty": "easy",
+    "goal": "Перейди в раздел «Правила» и найди Правила перевозки ручной клади». Остановись на странице с этими правилами.",
+    "eval_type": "url_contains",
+    "eval_value": "https://www.rzd.ru/ru/9836/page/103290?id=12560#main-header",
+    "checkpoints": [
+      "https://www.rzd.ru/",
+      "https://www.rzd.ru/ru/9285",
+      "https://www.rzd.ru/ru/9836",
+      "https://www.rzd.ru/ru/9836/page/103290?id=12560#main-header"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/header/div[2]/nav/ul/li[7]/a", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[1]/main/div/section/div/ul/li[6]/a", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/main/div/section/div[1]/ul/li[9]/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "rzd_09",
+    "name": "РЖД: Тарифы для детей",
+    "har_path": "benchmark_data/rzd.har",
+    "start_url": "https://www.rzd.ru",
+    "type": "travel",
+    "difficulty": "easy",
+    "goal": "Найди информацию о тарифах для льготных категорий пассажиров, а именно для детей. Остановись на странице с описанием детских тарифов.",
+    "eval_type": "element_exists",
+    "eval_value": "button.details-summary.active:has-text(\"Дети\")",
+    "checkpoints": [
+      "https://www.rzd.ru/",
+      "https://www.rzd.ru/ru/9328",
+      "https://www.rzd.ru/ru/9336"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/header/div[2]/nav/ul/li[4]/a", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[1]/main/div/section/div/ul[3]/li[2]/a", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/main/div/section/div[2]/div[2]/button", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "rzd_10",
+    "name": "РЖД: Расписание Сапсана",
+    "har_path": "benchmark_data/rzd.har",
+    "start_url": "https://www.rzd.ru",
+    "type": "travel",
+    "difficulty": "easy",
+    "goal": "Найди расписание скоростного поезда «Сапсан» из Санкт-Петербурга в Москву. Остановись на странице с расписанием.",
+    "eval_type": "element_exists",
+    "eval_value": "button.details-summary.active:has-text(\"Санкт-Петербург – Москва\")",
+    "checkpoints": [
+      "https://www.rzd.ru/",
+      "https://www.rzd.ru/ru/9318",
+      "https://www.rzd.ru/ru/9318/page/9000?id=1",
+      ""
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/main/div/section[4]/div/div[1]/a", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[1]/main/section/div[2]/div/a[1]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/main/div/section[5]/button[3]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "rzd_11",
+    "name": "РЖД: Поиск по сайту — дополнительные услуги",
+    "har_path": "benchmark_data/rzd.har",
+    "start_url": "https://www.rzd.ru",
+    "type": "info",
+    "difficulty": "medium",
+    "goal": "Воспользуйся поиском по всему сайту РЖД. Введи ключевое слово «Животные» и найди в результатах страницу «Дополнительные услуги в поездах». Перейди на неё и остановись.",
+    "eval_type": "url_contains",
+    "eval_value": "https://www.rzd.ru/ru/11291",
+    "checkpoints": [
+      "https://www.rzd.ru/",
+      "https://www.rzd.ru/ru/9342?search_pattern=%D0%96%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D0%B5",
+      "https://www.rzd.ru/ru/9342?offset=0&base=ru&sorted_search_entity_context_list=sitemap%2Centerprise%2Cstatic%2Ctrains%2Clux_trains%2Cpromo%2Cdoc%2Ctender%2Cproperty%2Cpurchase%2Cforwarders%2Cnews%2Carticle%2Clongread%2Cvokzaly&search_pattern=%D0%96%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D0%B5&search_mode=phrase&date_from=&date_to=&virtual_portal_id=108",
+      "https://www.rzd.ru/ru/11291"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/header/div[1]/div[2]/nav[2]/ul/li[4]/a/svg", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[1]/header/div[1]/div[2]/div/form/input", "action": "type", "text": "Животные"},
+      {"step": 3, "x_path": "html/body/div[1]/header/div[1]/div[2]/div/form/button", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[1]/main/div/div/div[3]/ol/li[2]/div[3]/p/a", "action": "click", "text": ""}
+
+    ]
+  },
+  {
+    "id": "hermitage_01",
+    "name": "Эрмитаж: Поиск билета",
+    "har_path": "benchmark_data/hermitage.har",
+    "start_url": "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "type": "entertainment",
+    "difficulty": "hard",
+    "goal": "Начни покупку билета на выставку в Эрмитаж 'Входной билет в Главный музейный комплекс. Вход со стороны Иорданской лестницы' на 30 мая. Данные для заполнения полей: ФИО - Иван Иванович Иванов, Email - [ivan@mail.ru](mailto:ivan@mail.ru), Телефон - 9999999999. Остановись на странице оплаты.",
+    "eval_type": "url_pattern",
+    "eval_value": "tickets\\.hermitagemuseum\\.org/order/[a-f0-9]{40}",
+    "checkpoints": [
+      "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+      "https://tickets.hermitagemuseum.org/event/FEBB8FFA0D6C5E245349C24AA32FA682B8BC7FE0/2026-04-30",
+      "https://tickets.hermitagemuseum.org/event/FEBB8FFA0D6C5E245349C24AA32FA682B8BC7FE0/2026-04-30/11:00",
+      "https://tickets.hermitagemuseum.org/order/220ec864a3b73fa733af98528b388bdea0288862"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/main/div/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div/button", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div/main/div/div[3]/div/div/div[2]/div[2]/div[1]/div[16]/div[2]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div/main/div/div[3]/div[1]/div/div[2]/div[3]/div[2]/div[1]/span[1]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div/main/div/div[3]/div[2]/div/form/div[1]/div/div/div[2]/table/tbody/tr[1]/td[3]/div/div[3]/img", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div/main/div/div[3]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[1]/input", "action": "type", "text": "Иван Иванович Иванов"},
+      {"step": 6, "x_path": "html/body/div/main/div/div[3]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[2]/div/input", "action": "type", "text": "9999999999"},
+      {"step": 7, "x_path": "html/body/div/main/div/div[3]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[3]/input", "action": "type", "text": "ivan@mail.ru"},
+      {"step": 8, "x_path": "html/body/div/main/div/div[3]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[4]/input", "action": "type", "text": "ivan@mail.ru"},
+      {"step": 9, "x_path": "html/body/div/main/div/div[3]/div[2]/div/form/div[2]/div/div/div/div[2]/div[1]/div/label", "action": "click", "text": ""},
+      {"step": 10, "x_path": "html/body/div/main/div/div[3]/div[2]/div/form/div[2]/div/div/div/div[2]/div[2]/div/label", "action": "click", "text": ""},
+      {"step": 11, "x_path": "html/body/div/main/div/div[3]/div[2]/div/form/div[2]/div/div/div/div[3]/div[2]/button", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "hermitage_02",
+    "name": "Эрмитаж: Программы для детей",
+    "har_path": "benchmark_data/hermitage.har",
+    "start_url": "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "type": "entertainment",
+    "difficulty": "easy",
+    "goal": "Найди раздел Программы там выбери детям и остановись на странице с результатами поиска.",
+    "eval_type": "url_contains",
+    "eval_value": "https://www.hermitagemuseum.org/learn/children/",
+    "checkpoints": [
+      "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+      "https://www.hermitagemuseum.org/learn?lng=ru",
+      "https://www.hermitagemuseum.org/learn/children/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/header/nav/ul/li[3]/a", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[2]/div[2]/section[1]/div/div[3]/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "hermitage_03",
+    "name": "Эрмитаж: Экскурсии по Пушкинской карте",
+    "har_path": "benchmark_data/hermitage.har",
+    "start_url": "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "type": "entertainment",
+    "difficulty": "easy",
+    "goal": "Найди раздел Экскурсии, доступные по Пушкинской карте. Нажми на первую из найденных экскурсий, чтобы посмотреть доступные билеты. Остановись на странице с выбором времени и билетов.",
+    "eval_type": "url_contains",
+    "eval_value": "https://tickets.hermitagemuseum.org/event/AD1F73FACA5B600384A991F00E2D59E372870D18",
+    "checkpoints": [
+      "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+      "https://tickets.hermitagemuseum.org/?id=4&sid=3",
+      "https://tickets.hermitagemuseum.org/event/AD1F73FACA5B600384A991F00E2D59E372870D18"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/main/div/div[2]/div/ul/li[2]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div/main/div/div[2]/div/div[1]/div[2]/div/div[5]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div/main/div/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div/button", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "hermitage_04",
+    "name": "Эрмитаж: Поддержать музей",
+    "har_path": "benchmark_data/hermitage.har",
+    "start_url": "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "type": "entertainment",
+    "difficulty": "easy",
+    "goal": "Найди на сайте информацию о том, как можно поддержать музей. Остановись на странице с информацией о поддержке.",
+    "eval_type": "element_exists",
+    "eval_value": "a.btn_support",
+    "checkpoints": [
+    "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "https://support.hermitagemuseum.org/ru"
+  ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/header/nav/ul/li[5]/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "hermitage_05",
+    "name": "Эрмитаж: Адрес музея",
+    "har_path": "benchmark_data/hermitage.har",
+    "start_url": "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "type": "info",
+    "difficulty": "easy",
+    "goal": "Найди на сайте адрес музея. Остановись на странице где указан адрес.",
+    "eval_type": "text_contains",
+    "eval_value": "Государственный Эрмитаж Россия, 190000, Санкт-Петербург, Дворцовая набережная, 34",
+    "checkpoints": [
+      "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+      "https://www.hermitagemuseum.org/about?lng=ru"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/header/nav/ul/li[6]/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "hermitage_06",
+    "name": "Эрмитаж: Билет на экскурсию по выставке керамики",
+    "har_path": "benchmark_data/hermitage.har",
+    "start_url": "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "type": "entertainment",
+    "difficulty": "hard",
+    "goal": "Найди и начни оформление билета на экскурсию с фильтром выставки: «Экскурсионная путевка на временную выставку \"Керамика Исина в собраниях Петербурга и Москвы. XVII - вторая половина XX века\" с посещением экспозиций Главного музейного комплекса» на 31 мая на 2 человека. Данные для заполнения полей: ФИО - Иван Иванович Иванов, Email - ivan@mail.ru, Телефон - 9999999999. Остановись на странице оплаты.",
+    "eval_type": "url_pattern",
+    "eval_value": "tickets\\.hermitagemuseum\\.org/order/[a-f0-9]{40}",
+    "checkpoints": [
+      "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+      "https://tickets.hermitagemuseum.org/?id=4&sid=3",
+      "https://tickets.hermitagemuseum.org/event/44BABC08476EA8500135700D746EFF6382092DB6/2026-05-03/12:45",
+      "https://tickets.hermitagemuseum.org/order/64defe04a8671e3ef7fa8e46fe5973c52486285f"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/main/div/div/div/ul/li[2]/span", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div/main/div/div/div/div[1]/div[2]/div/div[11]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div/main/div/div/div/div[2]/div/div[2]/div[2]/div[2]/div/button", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div/main/div/div[2]/div[1]/div/div[5]/div[2]/div[1]/div[5]/div[2]", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div/div/div/div[2]/table/tbody/tr/td[3]/div/div[3]/img", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div/div/div/div[2]/table/tbody/tr/td[3]/div/div[3]/img", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[1]/input", "action": "type", "text": "Иван Иванович Иванов"},
+      {"step": 8, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[2]/div/input", "action": "type", "text": "9999999999"},
+      {"step": 9, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[3]/input", "action": "type", "text": "ivan@mail.ru"},
+      {"step": 10, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[4]/input", "action": "type", "text": "ivan@mail.ru"},
+      {"step": 11, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[2]/div[1]/div/label", "action": "click", "text": ""},
+      {"step": 12, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[2]/div[2]/div/label", "action": "click", "text": ""},
+      {"step": 13, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[3]/div[2]/button", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "hermitage_07",
+    "name": "Эрмитаж: Онлайн-лекции",
+    "har_path": "benchmark_data/hermitage.har",
+    "start_url": "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "type": "entertainment",
+    "difficulty": "easy",
+    "goal": "Найди раздел с лекциями и выбери онлайн-формат. Остановись на странице с онлайн-лекциями.",
+    "eval_type": "url_contains",
+    "eval_value": "https://tickets.hermitagemuseum.org/?id=5&sid=28",
+    "checkpoints": [
+      "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+      "https://tickets.hermitagemuseum.org/?id=5&sid=92",
+      "https://tickets.hermitagemuseum.org/?id=5&sid=28"
+
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/main/div/div/div/ul/li[3]/span", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div/main/div/div/div/div[1]/div[1]/div[2]/span", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "hermitage_08",
+    "name": "Эрмитаж: Билет по поиску «Старая Деревня»",
+    "har_path": "benchmark_data/hermitage.har",
+    "start_url": "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "type": "entertainment",
+    "difficulty": "hard",
+    "goal": "Найди билет по ключевым словам «Старая Деревня». Из найденных результатов выбери экскурсионную путевку, самое позднее доступное время на 31 мая и начни оформление. Данные для заполнения полей: ФИО - Иван Иванович Иванов, Email - ivan@mail.ru, Телефон - 9999999999. Остановись на странице оплаты.",
+    "eval_type": "url_pattern",
+    "eval_value": "tickets\\.hermitagemuseum\\.org/order/[a-f0-9]{40}",
+    "checkpoints": [
+      "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+      "https://tickets.hermitagemuseum.org/event/22DE96636782A3814EAC6D2B8EDA7B70E04C65C4/2026-05-03",
+      "https://tickets.hermitagemuseum.org/nominal-tickets/15815c36a9ef6b6b5b745d4d3217d6146cff4e4e?lang=ru"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/main/div/div/div/div[1]/div[1]/div[1]/div/input", "action": "type", "text": "Старая Деревня"},
+      {"step": 2, "x_path": "html/body/div/main/div/div/div/div[2]/div/div/div[2]/div[2]/div/button", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div/main/div/div[2]/div[1]/div/div[5]/div[2]/div[3]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div/main/div/div[2]/div[1]/div/div[5]/div[2]/div[3]", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div/main/div/div[2]/div[1]/div/div[5]/div[2]/div[3]", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div/main/div/div[2]/div[1]/div/div[5]/div[2]/div[1]/div[23]/div[2]", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div/main/div/div[2]/div[1]/div/div[5]/div[3]/div[2]/div[6]/span[1]", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div/div/div/div[2]/table/tbody/tr/td[3]/div/div[3]/img", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[1]/input", "action": "type", "text": "Иван Иванович Иванов"},
+      {"step": 10, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[2]/div/input", "action": "type", "text": "9999999999"},
+      {"step": 11, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[3]/input", "action": "type", "text": "ivan@mail.ru"},
+      {"step": 12, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[1]/div[2]/div[4]/input", "action": "type", "text": "ivan@mail.ru"},
+      {"step": 13, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[2]/div[1]/div/label", "action": "click", "text": ""},
+      {"step": 14, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[2]/div[2]/div/label", "action": "click", "text": ""},
+      {"step": 15, "x_path": "html/body/div/main/div/div[2]/div[2]/div/form/div[2]/div/div/div/div[3]/div[2]/button", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "hermitage_09",
+    "name": "Эрмитаж: Краткие правила посещения",
+    "har_path": "benchmark_data/hermitage.har",
+    "start_url": "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "type": "info",
+    "difficulty": "easy",
+    "goal": "Найди в навигации пункт «Правила» и в выпадающем списке выбери «Краткие правила». Остановись на странице с краткими правилами посещения.",
+    "eval_type": "url_contains",
+    "eval_value": "https://hermitagemuseum.org/tickets/rules?lng=ru",
+    "checkpoints": [
+      "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+      "https://hermitagemuseum.org/tickets/rules?lng=ru"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/header/div/div[3]/div[2]/div[1]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div/header/div/div[3]/div[2]/div[2]/div/div[2]/div[2]/div", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "hermitage_10",
+    "name": "Эрмитаж: Виртуальный визит — Иорданская галерея",
+    "har_path": "benchmark_data/hermitage.har",
+    "start_url": "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "type": "entertainment",
+    "difficulty": "easy",
+    "goal": "Открой схему Главногой музейного комплекса через раздел «Виртуальный визит» и выбери «Иорданскую галерею». Остановись когда откроется визуальное представление галереи.",
+    "eval_type": "url_contains",
+    "eval_value": "https://pano.hermitagemuseum.org/newpano/ru/main/#node1",
+    "checkpoints": [
+      "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+      "https://www.hermitagemuseum.org/panorama?lng=ru",
+      "https://www.hermitagemuseum.org/panorama/pano_1/?lng=ru",
+      "https://pano.hermitagemuseum.org/newpano/ru/main/#node1"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/header/nav/ul/li[4]/a", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/a", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[2]/div[2]/div[3]/div[1]/div[2]/ul[2]/li[1]/p[1]/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "hermitage_11",
+    "name": "Эрмитаж: Новости",
+    "har_path": "benchmark_data/hermitage.har",
+    "start_url": "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+    "type": "info",
+    "difficulty": "medium",
+    "goal": "Перейди в раздел Посетителям и найди в меню Новости и открой блог музея и открой первую новость. Остановись на странице с новостью.",
+    "eval_type": "url_contains",
+    "eval_value": "https://www.hermitagemuseum.org/news/blog/32-entrance?lng=ru",
+    "checkpoints": [
+      "https://tickets.hermitagemuseum.org/?id=3&sid=1",
+      "https://www.hermitagemuseum.org/visitus?lng=ru",
+      "https://www.hermitagemuseum.org/news?lng=ru",
+      "https://www.hermitagemuseum.org/news/blog?lng=ru",
+      "https://www.hermitagemuseum.org/news/blog/32-entrance?lng=ru"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/header/nav/ul/li[1]/a", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[2]/header[2]/div[2]/div[1]/p", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[2]/header[2]/div[2]/div[2]/ul/li[5]/a", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[2]/div[2]/div[1]/div[2]/div[3]/a", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[2]/div[2]/section/div[1]/div[2]/div[1]/div[3]/h3/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "otello_01",
+    "name": "Отелло: Поиск отеля",
+    "har_path": "benchmark_data/otello.har",
+    "start_url": "https://otello.ru/",
+    "type": "travel",
+    "difficulty": "medium",
+    "goal": "Не входи в аккаунт. Начни искать отели в Москве с 24 по 28 июня на двоих в одном номере. Отсортируй по самым дешевым и остановись.",
+    "eval_type": "url_pattern",
+    "eval_value": "otello\\.ru/hotels/moskva.*sort=cheap_first.*checkin=2026-06-24.*checkout=2026-06-28.*adults.*2",
+    "checkpoints": [
+      "https://otello.ru/",
+      "https://otello.ru/hotels/moskva?geo_id=4504222397630173&checkin=2026-06-24&checkout=2026-06-28&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "https://otello.ru/hotels/moskva?geo_id=4504222397630173&bbox=37.534454%2C55.704468%2C37.707584%2C55.796024&checkin=2026-06-24&checkout=2026-06-28&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "https://otello.ru/hotels/moskva?geo_id=4504222397630173&bbox=37.534454%2C55.666405%2C37.707584%2C55.833961&sort=cheap_first&checkin=2026-06-24&checkout=2026-06-28&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[1]/div[1]", "action": "type", "text": "Москва"},
+      {"step": 2, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[1]/div[2]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div/div[3]/button[24]/div", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div/div[3]/button[28]/div", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[3]/div/div/button/div/div/div/div", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div/div[1]/div[2]/div/div/div[1]/div/div[1]/div/div/div/div/div[2]/div[1]/div[2]/button[1]", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div/div[2]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "otello_02",
+    "name": "Отелло: Поиск отеля",
+    "har_path": "benchmark_data/otello.har",
+    "start_url": "https://otello.ru/",
+    "type": "travel",
+    "difficulty": "hard",
+    "goal": "Не входи в аккаунт. Начни искать отели в Санкт-Петербурге с 12 по 14 июня на одного. Отсортируй по самым высоким рейтингам и остановись.",
+    "eval_type": "url_pattern",
+    "eval_value": "otello\\.ru/hotels/sankt_peterburg.*sort=rating.*checkin=2026-06-12.*checkout=2026-06-14.*adults.*1",
+    "checkpoints": [
+      "https://otello.ru/",
+      "https://otello.ru/hotels/sankt_peterburg?geo_id=5348647327760881&checkin=2026-06-12&checkout=2026-06-14&guest_groups=%5B%7B%22adults%22%3A1%7D%5D",
+      "https://otello.ru/hotels/sankt_peterburg?geo_id=5348647327760881&bbox=30.191504%2C59.886253%2C30.41995%2C59.99378&checkin=2026-06-12&checkout=2026-06-14&guest_groups=%5B%7B%22adults%22%3A1%7D%5D",
+      "https://otello.ru/hotels/sankt_peterburg?geo_id=5348647327760881&bbox=30.191504%2C59.841526%2C30.41995%2C60.038303&checkin=2026-06-12&checkout=2026-06-14&guest_groups=%5B%7B%22adults%22%3A1%7D%5D",
+      "https://otello.ru/hotels/sankt_peterburg?geo_id=5348647327760881&bbox=30.191504%2C59.841526%2C30.41995%2C60.038303&sort=rating&checkin=2026-06-12&checkout=2026-06-14&guest_groups=%5B%7B%22adults%22%3A1%7D%5D"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[1]/div[1]", "action": "type", "text": "Санкт-Петербург"},
+      {"step": 2, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[1]/div[2]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div/div[3]/button[12]/div", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div/div[3]/button[14]/div", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[3]/div/div/button", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[1]/div[3]", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div[2]/button[1]/svg", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[3]/div/div/button[2]", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 10, "x_path": "html/body/div/div[1]/div[2]/div/div/div[1]/div/div[1]/div/div/div/div/div[2]/div[1]/div[2]/button[1]", "action": "click", "text": ""},
+      {"step": 11, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div/div[5]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "otello_03",
+    "name": "Отелло: Поиск отеля",
+    "har_path": "benchmark_data/otello.har",
+    "start_url": "https://otello.ru/",
+    "type": "travel",
+    "difficulty": "hard",
+    "goal": "Не входи в аккаунт. Начни искать отели в Минеральные воды с 22 по 28 июня на две пары в разных номерах (4 гостя). Остановись как только откроется список вариантов.",
+    "eval_type": "url_pattern",
+    "eval_value": "otello\\.ru/hotels/mineralnie_vodi.*checkin=2026-06-22.*checkout=2026-06-28.*adults.*2.*adults.*2",
+    "checkpoints": [
+      "https://otello.ru/",
+      "https://otello.ru/hotels/mineralnie_vodi?geo_id=12526259233882117&checkin=2026-06-22&checkout=2026-06-28&guest_groups=%5B%7B%22adults%22%3A2%7D%2C%7B%22adults%22%3A2%7D%5D",
+      "https://otello.ru/hotels/mineralnie_vodi?geo_id=12526259233882117&bbox=43.051247%2C44.156605%2C43.219604%2C44.240746&checkin=2026-06-22&checkout=2026-06-28&guest_groups=%5B%7B%22adults%22%3A2%7D%2C%7B%22adults%22%3A2%7D%5D",
+      "https://otello.ru/hotels/mineralnie_vodi?geo_id=12526259233882117&bbox=43.051247%2C44.09482%2C43.219604%2C44.302378&checkin=2026-06-22&checkout=2026-06-28&guest_groups=%5B%7B%22adults%22%3A2%7D%2C%7B%22adults%22%3A2%7D%5D"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[1]/div[1]", "action": "type", "text": "Минеральные воды"},
+      {"step": 2, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[1]/div[2]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div/div[3]/button[22]/div", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div/div[3]/button[28]/div", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[3]/div/div/button", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[1]/div[3]", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/button", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[3]/div/div/button[2]", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[2]/button", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "otello_04",
+    "name": "Отелло: Поиск отеля",
+    "har_path": "benchmark_data/otello.har",
+    "start_url": "https://otello.ru/",
+    "type": "travel",
+    "difficulty": "hard",
+    "goal": "Не входи в аккаунт. Начни искать отели на Озеро Банное с 8 по 21 июня для пары. Когда появиться список отелей, поставь метки 'Можно с животными' и 'Расстояние до подъемника - Удобнее на машине' и остановись.",
+    "eval_type": "url_pattern",
+    "eval_value": "otello\\.ru/hotels/ozero_bannoe.*pets-allowed.*8000.*checkin=2026-06-08.*checkout=2026-06-21",
+    "checkpoints": [
+      "https://otello.ru/",
+      "https://otello.ru/hotels/ozero_bannoe?geo_id=70030076487536442&checkin=2026-06-08&checkout=2026-06-21&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "https://otello.ru/hotels/ozero_bannoe?geo_id=70030076487536442&bbox=58.557182%2C53.53853%2C58.684692%2C53.637833&checkin=2026-06-08&checkout=2026-06-21&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "https://otello.ru/hotels/ozero_bannoe?geo_id=70030076487536442&bbox=58.557182%2C53.523083%2C58.684692%2C53.653238&checkin=2026-06-08&checkout=2026-06-21&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "https://otello.ru/hotels/ozero_bannoe?geo_id=70030076487536442&bbox=58.557182%2C53.523083%2C58.684692%2C53.653238&filters=%7B%22amenities%22%3A%5B%22pets-allowed%22%5D%7D&checkin=2026-06-08&checkout=2026-06-21&guest_groups=%5B%7B%22adults%22%3A2%7D%5D",
+      "https://otello.ru/hotels/ozero_bannoe?geo_id=70030076487536442&bbox=58.557182%2C53.523083%2C58.684692%2C53.653238&filters=%7B%22amenities%22%3A%5B%22pets-allowed%22%5D%2C%22distance_to_ski_lift%22%3A%5B%228000%22%5D%7D&checkin=2026-06-08&checkout=2026-06-21&guest_groups=%5B%7B%22adults%22%3A2%7D%5D"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[1]/div[1]", "action": "type", "text": "Озеро Банное"},
+      {"step": 2, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[1]/div[2]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div/div[3]/button[8]/div", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div/div[3]/button[21]/div", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[3]/div/div/button", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div/div[1]/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div/div[1]/div[2]/div/div/div[1]/div/div[1]/div/div/div/div/div[2]/div[1]/div[2]/button[6]", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div/div[1]/div[2]/div/div/div[1]/div/div[1]/div/div/div/div/div[2]/div[1]/div[2]/button[5]", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[1]/div/button[3]", "action": "click", "text": ""},
+      {"step": 10, "x_path": "html/body/div/div[1]/div[4]/div/div/div/div[2]/div/div/div[2]/div[3]/div/div/button[2]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sutochno_01",
+    "name": "Суточно: Поиск отеля",
+    "har_path": "benchmark_data/sutochno.har",
+    "start_url": "https://sutochno.ru/",
+    "type": "travel",
+    "difficulty": "medium",
+    "goal": "Не входи в аккаунт. Начни искать отели в Москве с 24 по 28 июня на двоих в одном номере. После ввода места назначения необходимо подождать и выбрать первый вариант, появившийся в поиске. Отсортируй по самым дешевым и остановись.",
+    "eval_type": "url_pattern",
+    "eval_value": "sutochno\\.ru/front/searchapp/search.*guests_adults=2.*occupied=2026-06-24.*2026-06-28.*cheap_and_fast=1",
+    "checkpoints": [
+      "https://sutochno.ru/",
+      "https://sutochno.ru/front/searchapp/search?guests_adults=2&occupied=2026-06-24;2026-06-28&term=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&id=397366&type=city&SW.lat=55.555374006722374&SW.lng=37.32630595564761&NE.lat=55.919918678813524&NE.lng=37.90383710525897",
+      "https://sutochno.ru/front/searchapp/search?guests_adults=2&occupied=2026-06-24;2026-06-28&term=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&id=397366&type=city&SW.lat=55.48701228832808&SW.lng=37.31638073455486&NE.lat=55.987523787390664&NE.lng=37.91376232635173&price_per=1&booking_now=1&cheap_and_fast=1"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]/div/div[1]", "action": "type", "text": "Москва"},
+      {"step": 2, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/div/div[1]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[2]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[1]/div/table/tr[4]/td[3]", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[1]/div/table/tr[4]/td[7]", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/button", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[3]/div[1]/div[2]/button[3]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sutochno_02",
+    "name": "Суточно: Поиск отеля",
+    "har_path": "benchmark_data/sutochno.har",
+    "start_url": "https://sutochno.ru/",
+    "type": "travel",
+    "difficulty": "hard",
+    "goal": "Не входи в аккаунт. Начни искать отели в Санкт-Петербурге с 12 по 14 июня на одного. После ввода места назначения необходимо подождать и выбрать первый вариант, появившийся в поиске. Отсортируй по самым высоким рейтингам и остановись.",
+    "eval_type": "url_pattern",
+    "eval_value": "sutochno\\.ru/front/searchapp/search.*guests_adults=1.*occupied=2026-06-12.*2026-06-14.*sortings=rating\\.desc",
+    "checkpoints": [
+      "https://sutochno.ru/",
+      "https://sutochno.ru/front/searchapp/search?guests_adults=1&occupied=2026-06-12;2026-06-14&term=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&id=397367&type=city&SW.lat=59.69450228651077&SW.lng=30.006217704101545&NE.lat=60.139930051481414&NE.lng=30.603599295898437&price_per=1",
+      "https://sutochno.ru/front/searchapp/search?guests_adults=1&occupied=2026-06-12;2026-06-14&term=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3&id=397367&type=city&SW.lat=59.69450228651077&SW.lng=30.006217704101545&NE.lat=60.139930051481414&NE.lng=30.603599295898437&price_per=1&sortings=rating.desc"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]/div/div[1]", "action": "type", "text": "Санкт-Петербург"},
+      {"step": 2, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/div/div[1]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[2]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[1]/div/table/tr[2]/td[5]", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[1]/div/table/tr[2]/td[7]", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/button", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[1]/div[1]/div[2]/button[1]", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/button", "action": "click", "text": ""},
+      {"step": 10, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[3]/div[1]/div[2]/button[2]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sutochno_03",
+    "name": "Суточно: Поиск отеля",
+    "har_path": "benchmark_data/sutochno.har",
+    "start_url": "https://sutochno.ru/",
+    "type": "travel",
+    "difficulty": "hard",
+    "goal": "Не входи в аккаунт. Начни искать отели в Минеральные Воды с 22 по 28 июня на 4 гостя. После ввода места назначения необходимо подождать и выбрать первый вариант, появившийся в поиске. Остановись как только откроется список вариантов.",
+    "eval_type": "url_pattern",
+    "eval_value": "sutochno\\.ru/front/searchapp/search.*guests_adults=4.*occupied=2026-06-22.*2026-06-28",
+    "checkpoints": [
+      "https://sutochno.ru/",
+      "https://sutochno.ru/front/searchapp/search?guests_adults=4&occupied=2026-06-22;2026-06-28&term=%D0%9C%D0%B8%D0%BD%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5+%D0%92%D0%BE%D0%B4%D1%8B&id=289883&type=city&SW.lat=44.15636&SW.lng=43.049856&NE.lat=44.24286&NE.lng=43.207914"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]/div/div[1]", "action": "type", "text": "Минеральные Воды"},
+      {"step": 2, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/div/div[1]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[2]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[1]/div/table/tr[4]/td[1]", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[1]/div/table/tr[4]/td[7]", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/button", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[1]/div[1]/div[2]/button[2]", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[1]/div[1]/div[2]/button[2]", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 10, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/button", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sutochno_04",
+    "name": "Суточно: Поиск отеля",
+    "har_path": "benchmark_data/sutochno.har",
+    "start_url": "https://sutochno.ru/",
+    "type": "travel",
+    "difficulty": "hard",
+    "goal": "Не входи в аккаунт. Начни искать отели в Калининград с 8 по 21 июня для пары, добавь питомца. После ввода места назначения необходимо подождать и выбрать первый вариант, появившийся в поиске. Когда появиться список отелей, остановись.",
+    "eval_type": "url_pattern",
+    "eval_value": "sutochno\\.ru/front/searchapp/search.*guests_adults=2.*occupied=2026-06-08.*2026-06-21.*pets=true",
+    "checkpoints": [
+      "https://sutochno.ru/",
+      "https://sutochno.ru/front/searchapp/search?guests_adults=2&occupied=2026-06-08;2026-06-21&term=%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4&id=312416&type=city&SW.lat=54.57588950602788&SW.lng=20.324455102050734&NE.lat=54.832759798044464&NE.lng=20.62314589794917&pets=true&price_per=1"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]/div/div[1]", "action": "type", "text": "Калининград"},
+      {"step": 2, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/div/div[1]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[2]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[1]/div/table/tr[2]/td[1]", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[1]/div/table/tr[3]/td[7]", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/button", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[1]/div[3]/div/div", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/button", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sutochno_05",
+    "name": "Суточно: Округ Москвы — ВАО",
+    "har_path": "benchmark_data/sutochno.har",
+    "start_url": "https://sutochno.ru/",
+    "type": "travel",
+    "difficulty": "medium",
+    "goal": "Не входи в аккаунт. Начни искать отели в округе ВАО на 24-26 июня на 2 взрослых. После ввода места назначения необходимо подождать и выбрать первый вариант, появившийся в поиске. И примени фильтр оценки по отзывам «Великолепно». Когда появится список с нужным фильтром, остановись.",
+    "eval_type": "url_pattern",
+    "eval_value": "sutochno\\.ru/vostochnyj-okrug.*guests_adults=2.*occupied=2026-07-24.*2026-07-26.*rating",
+    "checkpoints": [
+      "https://sutochno.ru/",
+      "https://www.sutochno.ru/vostochnyj-okrug",
+      "https://sutochno.ru/front/searchapp/search?type=city&id=411411&term=%D0%92%D0%BE%D1%81%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9+%D0%BE%D0%BA%D1%80%D1%83%D0%B3+(%D0%92%D0%90%D0%9E)&guests_adults=2&occupied=2026-07-24;2026-07-26&price_per=1&SW.lat=55.687534698320874&SW.lng=37.647190311035125&NE.lat=56.01739004347398&NE.lng=37.948627688964805",
+      "https://sutochno.ru/front/searchapp/search?type=city&id=411411&term=%D0%92%D0%BE%D1%81%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9+%D0%BE%D0%BA%D1%80%D1%83%D0%B3+(%D0%92%D0%90%D0%9E)&guests_adults=2&occupied=2026-07-24;2026-07-26&price_per=1&SW.lat=55.687534698320874&SW.lng=37.647190311035125&NE.lat=56.01739004347398&NE.lng=37.948627688964805&count_double_beds=1"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]/div/div[1]/input", "action": "type", "text": "ВАО"},
+      {"step": 2, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[1]/div[1]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[2]/div/table/tr[4]/td[3]/div/span", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[2]/div/table/tr[4]/td[5]/div/span", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/button/div/span", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[4]/div/div/div/div/div/div/div[4]/div[2]/label[1]/div", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sutochno_06",
+    "name": "Суточно: Вопросы и ответы",
+    "har_path": "benchmark_data/sutochno.har",
+    "start_url": "https://sutochno.ru/",
+    "type": "travel",
+    "difficulty": "easy",
+    "goal": "Не входи в аккаунт. Найди и открой на сайте «Вопросы и ответы». Найди отввет на вопрос «Как отменить бронь». Когда появится ответ, остановись.",
+    "eval_type": "url_contains",
+    "eval_value": "https://sutochno.ru/help/gosti/bronirovanie-otmena",
+    "checkpoints": [
+      "https://sutochno.ru/",
+      "https://sutochno.ru/help/gosti",
+      "https://sutochno.ru/help/gosti/bronirovanie-otmena"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/div[1]/div[3]/div[1]/div/div[1]/div[2]/a[7]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div/div[2]/div[2]/p[19]/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sutochno_07",
+    "name": "Суточно: Куда поехать на 1 день из Москвы",
+    "har_path": "benchmark_data/sutochno.har",
+    "start_url": "https://sutochno.ru/",
+    "type": "travel",
+    "difficulty": "easy",
+    "goal": "Найди на сайте раздел с идеями для отпуска и найди информацию про безвизовые страны где есть море. Остановись на странице с инфрормацией.",
+    "eval_type": "url_contains",
+    "eval_value": "https://sutochno.ru/sj/kuda-poekhat-na-more-bez-vizy?from=mainpage",
+    "checkpoints": [
+      "https://sutochno.ru/",
+      "https://sutochno.ru/sj/kuda-poekhat-na-more-bez-vizy?from=mainpage"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[5]/div/div[2]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sutochno_08",
+    "name": "Суточно: Все последние отзывы",
+    "har_path": "benchmark_data/sutochno.har",
+    "start_url": "https://sutochno.ru/",
+    "type": "info",
+    "difficulty": "easy",
+    "goal": "Найди в разделе гостям и нажми «Отзывы гостей». Остановись на странице со списком недавних всех отзывов.",
+    "eval_type": "url_contains",
+    "eval_value": "https://sutochno.ru/votes",
+    "checkpoints": [
+      "https://sutochno.ru/",
+      "https://sutochno.ru/votes"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/div[1]/div[3]/div[1]/div/div[1]/div[2]/a[2]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sutochno_09",
+    "name": "Суточно: Сдать жильё",
+    "har_path": "benchmark_data/sutochno.har",
+    "start_url": "https://sutochno.ru/",
+    "type": "travel",
+    "difficulty": "medium",
+    "goal": "Перейди в раздел «Сдать жильё» и изучи информацию о том, как сдавать жильё на Суточно.ру. Затем нажми «Добавить объявление». Остановись на странице входа в личный кабинет.",
+    "eval_type": "url_contains",
+    "eval_value": "https://extranet.sutochno.ru/front/host/add",
+    "checkpoints": [
+      "https://sutochno.ru/",
+      "https://xn--80aafg2a7bf6i.xn--p1ai/?from=mainheader-menu-b",
+      "https://extranet.sutochno.ru/front/host/add"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/div[1]/div[1]/div[2]/div[2]/div[1]/div/div[1]/a/span", "action": "click", "text": "Сдать жильё"},
+      {"step": 2, "x_path": "html/body/div/div[1]/div/div/div[8]/div/a/div/span", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sutochno_10",
+    "name": "Суточно: Поиск жилья в Минске с ребёнком",
+    "har_path": "benchmark_data/sutochno.har",
+    "start_url": "https://sutochno.ru/",
+    "type": "travel",
+    "difficulty": "hard",
+    "goal": "Не входи в аккаунт. Начни искать жильё в Минске с 27 июня по 1 июля на 2 взрослых и 1 ребёнка возраста 12 лет. После ввода места назначения необходимо подождать и выбрать первый вариант, появившийся в поиске. Когда появится список вариантов, установи максимальную цену за весь период 50 000 рублей и остановись.",
+    "eval_type": "url_pattern",
+    "eval_value": "sutochno\\.ru.*minsk.*guests_adults=2.*guests_children.*occupied=2026-06-27.*2026-07-01.*price",
+    "checkpoints": [
+      "https://sutochno.ru/",
+      "https://sutochno.ru/front/searchapp/search?guests_adults=2&guests_childrens=12&occupied=2026-06-27;2026-07-01&term=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA&id=398612&type=city&SW.lat=53.78334260247597&SW.lng=27.457040478474145&NE.lat=54.019142070129064&NE.lng=27.638658215290548&price_per=4",
+      "https://sutochno.ru/front/searchapp/search?guests_adults=2&guests_childrens=12&occupied=2026-06-27;2026-07-01&term=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA&id=398612&type=city&SW.lat=53.78334260247597&SW.lng=27.457040478474145&NE.lat=54.019142070129064&NE.lng=27.638658215290548&price_per=4&price=,50000"
+  ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]/div/div[1]/input", "action": "type", "text": "Минск"},
+      {"step": 2, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/div/div[1]/div/div/span[2]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[1]/div[1]/div[2]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[2]/div/table/tr[4]/td[6]/div/span", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[3]/div[2]/div[1]/div[1]/div/table/tr[1]/td[3]/div/span", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/button", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[1]/div[2]/div[2]/button[2]/div/span", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[1]/div[3]/div[1]/div/p", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[1]/div[3]/div[2]/div[13]", "action": "click", "text": ""},
+      {"step": 10, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 11, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[1]/div[2]/div/div/div[1]/div[3]/button/div/img", "action": "click", "text": ""},
+      {"step": 12, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[4]/div/div/div/div/div/div/div[3]/div[2]/div[1]/div/div/div/label[2]", "action": "click", "text": ""},
+      {"step": 13, "x_path": "html/body/div[1]/div/div[1]/div[2]/div[4]/div/div/div/div/div/div/div[3]/div[2]/div[2]/div/div[1]/div/span[2]/input", "action": "type", "text": "50000"}
+    ]
+  },
+  {
+    "id": "yafisha_01",
+    "name": "Яндекс Афиша: Поиск билета",
+    "har_path": "benchmark_data/yafisha.har",
+    "start_url": "https://afisha.yandex.ru/moscow",
+    "type": "entertainment",
+    "difficulty": "easy",
+    "goal": "Не входи в аккаунт. Найди билет в цирк на 'Тайна зеркальных иллюзий', остановись на странице шоу",
+    "eval_type": "url_contains",
+    "eval_value": ["https://afisha.yandex.ru/moscow/circus_show/taina-zerkalnykh-illiuzii?source=selection-events&rubricCode=circus_show&refererSelection=main_page_landing&refererSurface=selection", "https://afisha.yandex.ru/moscow/circus_show/taina-zerkalnykh-illiuzii?source=search-page"],
+    "checkpoints": [
+      "https://afisha.yandex.ru/moscow",
+      "https://afisha.yandex.ru/search?search-text=%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0+%D0%B7%D0%B5%D1%80%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85+%D0%B8%D0%BB%D0%BB%D1%8E%D0%B7%D0%B8%D0%B9&city=moscow&source=suggest",
+      "https://afisha.yandex.ru/moscow/circus_show/taina-zerkalnykh-illiuzii?source=search-page"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/header/div/div/div[1]/div[2]/div/div/form/span/span[1]/span", "action": "type", "text": "Тайна зеркальных иллюзий"},
+      {"step": 2, "x_path": "html/body/div[1]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[2]/div", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "yafisha_02",
+    "name": "Яндекс Афиша: Поиск билета",
+    "har_path": "benchmark_data/yafisha.har",
+    "start_url": "https://afisha.yandex.ru/moscow",
+    "type": "entertainment",
+    "difficulty": "easy",
+    "goal": "Не входи в аккаунт. Начни покупать билет на 'Стендап по-Женски'. Остановись на странице с раписанием",
+    "eval_type": "url_contains",
+    "eval_value": ["https://afisha.yandex.ru/moscow/standup/stand-up-po-zhenski-msk?source=search-page", "https://afisha.yandex.ru/moscow/standup/stand-up-po-zhenski-msk?city=moscow&rubricCode=standup&source=rubric_standup_featured&refererSurface=featured"],
+    "checkpoints": [
+      "https://afisha.yandex.ru/moscow",
+      "https://afisha.yandex.ru/search?search-text=%D0%A1%D1%82%D0%B5%D0%BD%D0%B4%D0%B0%D0%BF+%D0%BF%D0%BE-%D0%96%D0%B5%D0%BD%D1%81%D0%BA%D0%B8&city=moscow&source=suggest",
+      "https://afisha.yandex.ru/moscow/standup/stand-up-po-zhenski-msk?source=search-page"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/header/div/div/div[1]/div[2]/div/div", "action": "type", "text": "Стендап по-Женски"},
+      {"step": 2, "x_path": "html/body/div[1]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[2]/div/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "yafisha_03",
+    "name": "Яндекс Афиша: Поиск билета",
+    "har_path": "benchmark_data/yafisha.har",
+    "start_url": "https://afisha.yandex.ru/moscow",
+    "type": "entertainment",
+    "difficulty": "easy",
+    "goal": "Не входи в аккаунт. Оформи подарочный сертификат. Остановись на странице оформления сертификата.",
+    "eval_type": "url_contains",
+    "eval_value": "https://afisha.yandex.ru/certificates?city=moscow&source=menu",
+    "checkpoints": [
+      "https://afisha.yandex.ru/moscow",
+      "https://afisha.yandex.ru/certificates?city=moscow&source=menu"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/header/div/div/div[2]/div/div/div/nav/ul/li[1]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "yafisha_04",
+    "name": "Яндекс Афиша: Поиск билета",
+    "har_path": "benchmark_data/yafisha.har",
+    "start_url": "https://afisha.yandex.ru/moscow",
+    "type": "entertainment",
+    "difficulty": "easy",
+    "goal": "Не входи в аккаунт. Купи билет на концерт 'Руки Вверх!'. Остановись на странице выбора места.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://afisha.yandex.ru/moscow/concert/ruki-vverkh-30-nam-uzhe?city=moscow&rubricCode=concert&refererSurface=top-events", "https://afisha.yandex.ru/moscow/concert/ruki-vverkh-30-nam-uzhe?source=search-page"],
+    "checkpoints": [
+    "https://afisha.yandex.ru/moscow",
+    "https://afisha.yandex.ru/search?search-text=%D0%A0%D1%83%D0%BA%D0%B8+%D0%92%D0%B2%D0%B5%D1%80%D1%85%21&city=moscow&source=suggest",
+    "https://afisha.yandex.ru/moscow/concert/ruki-vverkh-30-nam-uzhe?source=search-page"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/header/div/div/div[1]/div[2]/div/div", "action": "type", "text": "Руки Вверх!"},
+      {"step": 2, "x_path": "html/body/div[1]/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "consultantnews_01",
+    "name": "Консультант Плюс новости: поиск релевантной новости",
+    "har_path": "benchmark_data/consultantnews.har",
+    "start_url": "https://www.consultant.ru/legalnews/",
+    "type": "info",
+    "difficulty": "easy",
+    "goal": "Открой самую актуальную новость и остановись на странице новости.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.consultant.ru/legalnews/31476/"],
+    "checkpoints": [
+    "https://www.consultant.ru/legalnews/",
+    "https://www.consultant.ru/legalnews/31476/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/div/div[5]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/a/span", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "consultantnews_02",
+    "name": "Консультант Плюс новости: поиск релевантной новости",
+    "har_path": "benchmark_data/consultantnews.har",
+    "start_url": "https://www.consultant.ru/legalnews/",
+    "type": "info",
+    "difficulty": "easy",
+    "goal": "Открой самую актуальную новость исключая тему 'Здравоохранение'. Для этого убери галочку у этой темы. Остановись на странице новости.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.consultant.ru/legalnews/31475/"],
+    "checkpoints": [
+    "https://www.consultant.ru/legalnews/",
+    "https://www.consultant.ru/legalnews/31475/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/div/div[2]/div/div/div[2]/div/div[1]/div/div[2]/div[6]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div/div/div[5]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/a/span", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "consultantnews_03",
+    "name": "Консультант Плюс новости: поиск релевантной новости",
+    "har_path": "benchmark_data/consultantnews.har",
+    "start_url": "https://www.consultant.ru/legalnews/",
+    "type": "info",
+    "difficulty": "easy",
+    "goal": "Открой самую актуальную новость, вышедшую 29 апреля и остановись на странице новости.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.consultant.ru/legalnews/31363/"],
+    "checkpoints": [
+    "https://www.consultant.ru/legalnews/",
+    "https://www.consultant.ru/legalnews/31363/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/div/div[5]/div/div/div[2]/div/div[2]/div/div[1]/div[16]/a/span", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "consultantnews_04",
+    "name": "Консультант Плюс новости: поиск релевантной новости",
+    "har_path": "benchmark_data/consultantnews.har",
+    "start_url": "https://www.consultant.ru/legalnews/",
+    "type": "info",
+    "difficulty": "easy",
+    "goal": "Найди в поиске 'Важные новости для бухгалтера'. Остановись на странице выдачи поиска.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.consultant.ru/legalnews/search/?query=%D0%92%D0%B0%D0%B6%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80%D0%B0&tag_ids="],
+    "checkpoints": [
+    "https://www.consultant.ru/legalnews/",
+    "https://www.consultant.ru/legalnews/search/?query=%D0%92%D0%B0%D0%B6%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B1%D1%83%D1%85%D0%B3%D0%B0%D0%BB%D1%82%D0%B5%D1%80%D0%B0&tag_ids="
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div/div/div[5]/div/div/div[3]/div[1]/div/div", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div/div/div[10]/form/div/div/div[2]/div/div/div[2]/input[1]", "action": "type", "text": "Важные новости для бухгалтера"},
+      {"step": 3, "x_path": "html/body/div/div/div[10]/form/div/div/div[2]/div/div/div[2]/input[2]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "consultant_01",
+    "name": "Консультант Плюс: действия на сайте",
+    "har_path": "benchmark_data/consultant.har",
+    "start_url": "https://www.consultant.ru/",
+    "type": "info",
+    "difficulty": "medium",
+    "goal": "Попробуй получить пробный доступ. Для этого зайди на страницу получения, заполни поля: Имя - Иван, Специализация - руководитель, Регион - Москва, Email - ivan@mail.ru, номер - 9999999995. Нажми получить доступ и остановись, даже если сатус неуспешный.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://login.consultant.ru/demo-access/status/"],
+    "checkpoints": [
+    "https://www.consultant.ru/",
+    "https://login.consultant.ru/demo-access/",
+    "https://login.consultant.ru/demo-access/status/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/header/nav/div/ul/li[4]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div/div[2]/div/form/div/div[2]/div[1]/input", "action": "type", "text": "Иван"},
+      {"step": 3, "x_path": "html/body/div/div[2]/div/form/div/div[2]/div[2]/select", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div/div[2]/div/form/div/div[2]/div[2]/select/option[6]", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div/div[2]/div/form/div/div[2]/div[3]/div[1]/input", "action": "type", "text": "Москва"},
+      {"step": 6, "x_path": "html/body/div/div[2]/div/form/div/div[2]/div[4]/input", "action": "type", "text": "ivan@mail.ru"},
+      {"step": 7, "x_path": "html/body/div/div[2]/div/form/div/div[2]/div[5]/input", "action": "type", "text": "9999999995"},
+      {"step": 8, "x_path": "html/body/div/div[2]/div/form/div/div[2]/div[7]/label", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div/div[2]/div/form/div/div[2]/div[9]/button", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "consultant_02",
+    "name": "Консультант Плюс: действия на сайте",
+    "har_path": "benchmark_data/consultant.har",
+    "start_url": "https://www.consultant.ru/",
+    "type": "info",
+    "difficulty": "easy",
+    "goal": "Найди контакты для отправки резюме. Для этого зайди в раздел 'Вакансии'. Остановись на странице с электронной почтой.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.consultant.ru/wanted/wanted6/"],
+    "checkpoints": [
+    "https://www.consultant.ru/",
+    "https://www.consultant.ru/wanted/",
+    "https://www.consultant.ru/wanted/wanted6/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/header/nav/div/ul/li[6]/a", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[3]/div/div[2]/ul/li[3]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "consultant_03",
+    "name": "Консультант Плюс: действия на сайте",
+    "har_path": "benchmark_data/consultant.har",
+    "start_url": "https://www.consultant.ru/",
+    "type": "info",
+    "difficulty": "medium",
+    "goal": "В разделе 'Горячие документы' найди самый актуальный документ среди 'Самое важное' за 24 апреля. Для этого поставь галочку в соответствующий чекбокс, выбери дату в календаре и открой сайт с самым актуальным документом. Полную версию открывать не надо.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.consultant.ru/document/cons_doc_LAW_532784/"],
+    "checkpoints": [
+    "https://www.consultant.ru/",
+    "https://www.consultant.ru/law/hotdocs/",
+    "https://www.consultant.ru/law/hotdocs/?important=1",
+    "https://www.consultant.ru/law/hotdocs/?important=1&date_start=24.04.2026&date_end=24.04.2026",
+    "https://www.consultant.ru/document/cons_doc_LAW_532784/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[3]/div[1]/div[1]/div[2]/section[1]/div/a", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[2]/section[1]/div[2]/div[3]/div/div[1]/div[2]/div[3]/div/input", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[2]/section[1]/div[2]/div[3]/div/div[1]/div[2]/div[1]/div", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[2]/section[1]/div[2]/div[3]/div/div[1]/div[2]/div[1]/div/div[2]/div[3]/div[1]/div[3]/div[26]", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[2]/section[1]/div[2]/div[3]/div/div[1]/div[2]/div[1]/div/div[2]/form/div[3]/button[1]", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[2]/section[1]/div[2]/div[4]/div/div/div[2]/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "consultant_04",
+    "name": "Консультант Плюс: действия на сайте",
+    "har_path": "benchmark_data/consultant.har",
+    "start_url": "https://www.consultant.ru/",
+    "type": "info",
+    "difficulty": "easy",
+    "goal": "Начни поиск по слову 'налоги'. Остановись на странице выдачи поиска.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.consultant.ru/search/?q=%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%B8"],
+    "checkpoints": [
+    "https://www.consultant.ru/",
+    "https://www.consultant.ru/search/?q=%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%B8"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/header/div/form", "action": "type", "text": "налоги"},
+      {"step": 2, "x_path": "html/body/header/div/form/input[2]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sunlight_01",
+    "name": "Санлайт: действия в мазазине",
+    "har_path": "benchmark_data/sunlight.har",
+    "start_url": "https://sunlight.net/",
+    "type": "shopping",
+    "difficulty": "easy",
+    "goal": "Зайди в раздел акций через каталог и открой цены обмена старых ювелирных изделий. Закрывай любые появившиеся окна (например, о местоположении или регистрации).",
+    "eval_type": "url_contains",
+    "eval_value": ["https://sunlight.net/obmen/"],
+    "checkpoints": [
+    "https://sunlight.net/",
+    "https://sunlight.net/actions/",
+    "https://sunlight.net/obmen/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[7]/div/div[2]/div[1]/div[2]/button[1]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[2]/div[1]/div[2]/div[1]/button", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[2]/div[1]/div[4]/div/div[1]/a[3]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[7]/div/section/section/section/section/svg", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[2]/article/section/section[3]/section[2]/section/section[2]/a[1]/button", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sunlight_02",
+    "name": "Санлайт: действия в магазине",
+    "har_path": "benchmark_data/sunlight.har",
+    "start_url": "https://sunlight.net/",
+    "type": "shopping",
+    "difficulty": "medium",
+    "goal": "Зайди в раздел Платина и найди самые недорогие серьги. Для этого выбери тип изделия и отсортируй по возрастанию цены. Выбери первый вариант и остановись. Закрывай любые появившиеся окна (например, о местоположении или регистрации).",
+    "eval_type": "url_contains",
+    "eval_value": ["https://sunlight.net/catalog/earring_368014.html"],
+    "checkpoints": [
+    "https://sunlight.net/",
+    "https://sunlight.net/catalog/ukrasheniya-iz-platiny.html",
+    "https://sunlight.net/catalog/sergi-iz-platiny.html",
+    "https://sunlight.net/catalog/?material=3603&product_type=4&sort=price_asc",
+    "https://sunlight.net/catalog/earring_368014.html"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[7]/div/div[2]/div[1]/div[2]/button[1]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[2]/div[1]/div[2]/div[1]/button", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[2]/div[1]/div[4]/div/div[1]/a[8]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[2]/div[4]/section[1]/div/div/div/div[2]/div/div[2]/div[1]/div[1]/div[2]/div/div[2]/ul/li[1]/a", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[2]/div[3]/section[1]/div/div/div/div[1]/div/div[2]/span", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[2]/div[3]/section[1]/div/div/div/div[2]/div/div[1]/div/ul/li[2]/a", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div[2]/div[3]/section[2]/div/div[2]/div[1]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sunlight_03",
+    "name": "Санлайт: действия в магазине",
+    "har_path": "benchmark_data/sunlight.har",
+    "start_url": "https://sunlight.net/",
+    "type": "shopping",
+    "difficulty": "medium",
+    "goal": "Найди часы с титановым корпусом. Выбери первый вариант и остановись. Закрывай любые появившиеся окна (например, о местоположении или регистрации).",
+    "eval_type": "url_contains",
+    "eval_value": ["https://sunlight.net/catalog/clock_349739.html"],
+    "checkpoints": [
+    "https://sunlight.net/",
+    "https://sunlight.net/catalog/clock/?direct=redirect_from_search&search=%D1%87%D0%B0%D1%81%D1%8B",
+    "https://sunlight.net/catalog/watches-case-titanium.html",
+    "https://sunlight.net/catalog/clock_349739.html"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[7]/div/div[2]/div[1]/div[2]/button[1]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[2]/div[1]/div[2]/div[1]/nav/div[1]/div/form/input", "action": "type", "text": "часы"},
+      {"step": 3, "x_path": "html/body/div[2]/div[1]/div[2]/div[1]/nav/div[1]/div/form/div[3]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[2]/div[4]/section[1]/div/div/div/div[2]/div/div[2]/div[1]/div[6]/span", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[2]/div[4]/section[1]/div/div/div/div[2]/div/div[2]/div[1]/div[6]/div[2]/div/ul/li[4]/a", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[2]/div[3]/section[2]/div/div[2]/div[1]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "sunlight_04",
+    "name": "Санлайт: действия в мазазине",
+    "har_path": "benchmark_data/sunlight.har",
+    "start_url": "https://sunlight.net/",
+    "type": "shopping",
+    "difficulty": "medium",
+    "goal": "Зайди в раздел Италия и найди самые дорогие серьги из золота с вставкой из Фианита. Открой самый дорогой вариант и остановись. Закрывай любые появившиеся окна (например, о местоположении или регистрации).",
+    "eval_type": "url_contains",
+    "eval_value": ["https://sunlight.net/catalog/earring_351938.html"],
+    "checkpoints": [
+    "https://sunlight.net/",
+    "https://sunlight.net/catalog/ukrasheniya-brendy-italii.html",
+    "https://sunlight.net/catalog/sergi-brendy-italii.html",
+    "https://sunlight.net/catalog/zolotye-sergi-brendy-italii.html",
+    "https://sunlight.net/catalog/?brand=2041&material=632&product_type=4&stone=322",
+    "https://sunlight.net/catalog/?brand=2041&material=632&product_type=4&sort=price_desc&stone=322",
+    "https://sunlight.net/catalog/earring_351938.html"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[7]/div/div[2]/div[1]/div[2]/button[1]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[2]/div[1]/div[2]/div[1]/button", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[2]/div[1]/div[4]/div/div[1]/a[17]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[2]/div[4]/section[1]/div/div/div/div[2]/div/div[2]/div[1]/div[1]/div[2]/div/div[2]/ul/li[1]/a", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[2]/div[4]/section[1]/div/div/div/div[2]/div/div[2]/div[1]/div[5]/div[2]/div/ul/li[1]/a", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[2]/div[3]/section[1]/div/div/div/div[2]/div/div[2]/div[1]/div[8]/div[2]/div/div[2]/ul/li[2]/a", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div[2]/div[3]/section[1]/div/div/div/div[1]/div/div[2]/span", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div[2]/div[3]/section[1]/div/div/div/div[2]/div/div[1]/div/ul/li[3]/a", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div[2]/div[3]/section[2]/div/div[2]/div[1]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "citilink_01",
+    "name": "Ситилинк: действия в мазазине",
+    "har_path": "benchmark_data/citilink.har",
+    "start_url": "https://www.citilink.ru/",
+    "type": "shopping",
+    "difficulty": "easy",
+    "goal": "Зайди в раздел акции и найди скидку 100% на сборку ПК. Открой акцию и остановись.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.citilink.ru/promo/youridealpc1/"],
+    "checkpoints": [
+    "https://www.citilink.ru/",
+    "https://www.citilink.ru/actions/",
+    "https://www.citilink.ru/promo/youridealpc1/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[2]/div[1]/header/div[4]/div/div/div[2]/div[2]/a[3]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[2]/div[1]/main/div/div/div[3]/div[1]/div/div[2]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[2]/div[1]/div[4]/div/div[1]/a[17]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "citilink_02",
+    "name": "Ситилинк: действия в мазазине",
+    "har_path": "benchmark_data/citilink.har",
+    "start_url": "https://www.citilink.ru/",
+    "type": "shopping",
+    "difficulty": "medium",
+    "goal": "Начни поиск 'ноутбук'. Отфильтруй варианты по бренду ASUS, процессору i7 и ОЗУ 32ГБ. Выбери самый дешевый вариант и остановись.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.citilink.ru/product/noutbuk-asus-tuf-gaming-fx608jpr-rv048-i7-14650hx-32gb-ssd1tb-rtx-5070-2155367/"],
+    "checkpoints": [
+    "https://www.citilink.ru/",
+    "https://www.citilink.ru/catalog/noutbuki/",
+    "https://www.citilink.ru/catalog/noutbuki/?pf=rating.any%2Cdiscount.any&f=rating.any%2Cdiscount.any%2Casus%2C277_3cored1i7%2C19967_332d1gb",
+    "https://www.citilink.ru/product/noutbuk-asus-tuf-gaming-fx608jpr-rv048-i7-14650hx-32gb-ssd1tb-rtx-5070-2155367/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[2]/div[1]/div[2]/div/div[2]/div/div/div[2]/div[1]/form/div/div/label/input", "action": "type", "text": "ноутбук"},
+      {"step": 2, "x_path": "html/body/div[2]/div[1]/div[2]/div/div[2]/div/div/div[2]/div[1]/form/div/div/label/div/div/button[2]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[1]/div[1]/div/div/div/div/div/div/div[2]/div[2]/div[7]/div[2]/div/div[1]/div/div/div/div[1]/div[2]/label", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[1]/div[1]/div/div/div/div/div/div/div[2]/div[2]/div[8]/div[2]/div/div[1]/div/div/div/div[4]/div/label", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[1]/div[1]/div/div/div/div/div/div/div[2]/div[2]/div[9]/div[2]/div/div[1]/div/div/div/div[4]/div/label", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[1]/div[2]", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[1]/div/div/div[2]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "citilink_03",
+    "name": "Ситилинк: действия в мазазине",
+    "har_path": "benchmark_data/citilink.har",
+    "start_url": "https://www.citilink.ru/",
+    "type": "shopping",
+    "difficulty": "medium",
+    "goal": "Начни искать 'телевизор' в поиске. Отфильтруй по диагонали 65 дюймов, 144 Гц и 4K. Выбери вариант с самым высоким рейтингом.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.citilink.ru/product/televizor-led-xiaomi-65-65-smart-s-pro-mini-led-slim-design-chernyi-ch-2131561/"],
+    "checkpoints": [
+    "https://www.citilink.ru/",
+    "https://www.citilink.ru/catalog/televizory/",
+    "https://www.citilink.ru/catalog/televizory/?pf=rating.any%2Cdiscount.any&f=rating.any%2Cdiscount.any%2C22713_11865a3d1b3165d1smb4%2C13343_118144d1gts%2C22905_118",
+    "https://www.citilink.ru/catalog/televizory/?sorting=rating_desc&pf=rating.any%2Cdiscount.any&f=rating.any%2Cdiscount.any%2C22713_11865a3d1b3165d1smb4%2C13343_118144d1gts%2C22905_118",
+    "https://www.citilink.ru/product/televizor-led-xiaomi-65-65-smart-s-pro-mini-led-slim-design-chernyi-ch-2131561/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[2]/div[1]/div[2]/div/div[2]/div/div/div[2]/div[1]/form/div/div/label/input", "action": "type", "text": "телевизор"},
+      {"step": 2, "x_path": "html/body/div[2]/div[1]/div[2]/div/div[2]/div/div/div[2]/div[1]/form/div/div/label/div/div/button[2]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[1]/div/div/div/div/div/div/div/div[2]/div[2]/div[8]/div[2]/div/div[1]/div/div/div/div[5]/div/label", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[1]/div[1]/div/div/div/div/div/div/div[2]/div[2]/div[9]/div[2]/div/div[1]/div/div/div/div[5]/div/label", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[1]/div[1]/div/div/div/div/div/div/div[2]/div[2]/div[10]/div[2]/div/div/div/div/div/div[3]/div/label", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[1]/div[2]", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[1]/div[3]/div[2]/div/button[4]/span", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[1]/div/div/div[2]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "citilink_04",
+    "name": "Ситилинк: действия в мазазине",
+    "har_path": "benchmark_data/citilink.har",
+    "start_url": "https://www.citilink.ru/",
+    "type": "shopping",
+    "difficulty": "medium",
+    "goal": "Открой каталог товаров и зайди в раздел 'Умный дом'. Открой раздел с умными колонками и открой первый вариант с самым лучшим рейтингом (после сортировки).",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.citilink.ru/product/umnaya-kolonka-yandex-stanciya-lait-2-yndx-00026grn-golos-p-alisa-zele-2048212/"],
+    "checkpoints": [
+    "https://www.citilink.ru/",
+    "https://www.citilink.ru/catalog/umnyi-dom/?ref=mainmenu",
+    "https://www.citilink.ru/catalog/portativnye-kolonki--umnye-kolonki-k/?ref=mainmenu_plate",
+    "https://www.citilink.ru/catalog/portativnye-kolonki--umnye-kolonki-k/?ref=mainmenu_plate&sorting=rating_desc",
+    "https://www.citilink.ru/product/umnaya-kolonka-yandex-stanciya-lait-2-yndx-00026grn-golos-p-alisa-zele-2048212/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[2]/div[1]/div[2]/div/div[2]/div/div/div[1]/div/a", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[3]/div/div/div/div/div/div[5]/div/div/div[2]/div/div[1]/div/div[1]/div/a[9]/div", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[2]/div[1]/main/div/div/div[2]/section/section[2]/div/a[1]", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[1]/div[3]/div[2]/div/button[4]/span", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[2]/div[1]/main/section/div[4]/div/div[3]/section/div[2]/div[2]/div[1]/div/div/div[2]", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "lamoda_01",
+    "name": "Ламода: действия в мазазине",
+    "har_path": "benchmark_data/lamoda.har",
+    "start_url": "https://www.lamoda.ru/",
+    "type": "shopping",
+    "difficulty": "medium",
+    "goal": "В разделе для мужчин зайди в раздел парфюмерия. Выбери бренд Banderas в фильтре, после применения фильтра выбери первый вариант и остановись.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.lamoda.ru/p/rtladw903301/beauty_accs-banderas-tualetnaya-voda/"],
+    "checkpoints": [
+    "https://www.lamoda.ru/",
+    "https://www.lamoda.ru/men-home/?ad_id=917032&creative_id=886367&slot=js_start_main",
+    "https://www.lamoda.ru/c/4288/beauty_accs-menbeauty/?labels=65486&is_sale=1&ad_id=975865&creative_id=937757&slot=js_m_tiz_right_3",
+    "https://www.lamoda.ru/c/4288/beauty_accs-menbeauty/?labels=65486&is_sale=1&ad_id=975865&creative_id=937757&slot=js_m_tiz_right_3&brands=5699",
+    "https://www.lamoda.ru/p/rtladw903301/beauty_accs-banderas-tualetnaya-voda/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/main/div/div[1]/div/div/a[2]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[1]/div/main/div/div[1]/div[3]/div/a/div[1]/div[2]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[9]/div[2]/div[1]/div/div/div/div[1]/div/div/div[2]/div[2]/div[7]", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[9]/div[2]/div[1]/div/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[2]/div[2]/div[2]/div/div[1]/div/div[1]/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "lamoda_02",
+    "name": "Ламода: действия в мазазине",
+    "har_path": "benchmark_data/lamoda.har",
+    "start_url": "https://www.lamoda.ru/",
+    "type": "shopping",
+    "difficulty": "hard",
+    "goal": "Начни искать 'кроссовки мужские'. После подгрузки вариантов найди черные кроссовки размером 42,5 фирмы adidas, примени фильтры и открой первый вариант.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.lamoda.ru/p/rtladw352201/shoes-adidas-krossovki/"],
+    "checkpoints": [
+    "https://www.lamoda.ru/",
+    "https://www.lamoda.ru/catalogsearch/result/?q=%D0%BA%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%B8%D0%B5&submit=y&gender_section=women",
+    "https://www.lamoda.ru/catalogsearch/result/?q=%D0%BA%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8+%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%B8%D0%B5&submit=y&gender_section=women&colors=645",
+    "https://www.lamoda.ru/catalogsearch/result/?q=%D0%BA%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8+%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%B8%D0%B5&submit=y&gender_section=women&colors=645&size_values=42.5",
+    "https://www.lamoda.ru/catalogsearch/result/?q=%D0%BA%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8+%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%B8%D0%B5&submit=y&gender_section=women&colors=645&size_values=42.5&brands=1061",
+    "https://www.lamoda.ru/p/rtladw352201/shoes-adidas-krossovki/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/header/div[2]/div/div/div[2]/div/div", "action": "type", "text": "кроссовки мужские"},
+      {"step": 2, "x_path": "html/body/div[1]/div/header/div[2]/div/div/div[2]/div/button", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[4]/div/div/div/div", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[13]/div[2]/div[1]/div/div/div/div[1]/div/div/div[2]/div[2]/div[20]/div/div", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[13]/div[2]/div[1]/div/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[5]/div/div/div", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[13]/div[2]/div[1]/div/div/div/div[1]/div/div/div[2]/div[19]/div/div", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[13]/div[2]/div[1]/div/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[6]/div/div/div/div", "action": "click", "text": ""},
+      {"step": 10, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[13]/div[2]/div[1]/div/div/div/div[1]/div/div/div[2]/div[2]/div[1]/div/div", "action": "click", "text": ""},
+      {"step": 11, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[13]/div[2]/div[1]/div/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 12, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[2]/div/div[1]/div/div[1]/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "lamoda_03",
+    "name": "Ламода: действия в мазазине",
+    "har_path": "benchmark_data/lamoda.har",
+    "start_url": "https://www.lamoda.ru/",
+    "type": "shopping",
+    "difficulty": "hard",
+    "goal": "Начни искать 'кофта женская'. После подгрузки вариантов найди хлопковую белую размером 46, примени фильтры и открой первый вариант.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.lamoda.ru/p/rtlaeq147301/clothes-creatorstudio-svitshot/"],
+    "checkpoints": [
+    "https://www.lamoda.ru/",
+    "https://www.lamoda.ru/catalogsearch/result/?q=%D0%BA%D0%BE%D1%84%D1%82%D0%B0%20%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F&submit=y&gender_section=women",
+    "https://www.lamoda.ru/catalogsearch/result/?q=%D0%BA%D0%BE%D1%84%D1%82%D0%B0+%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F&submit=y&gender_section=women&base_materials=19",
+    "https://www.lamoda.ru/catalogsearch/result/?q=%D0%BA%D0%BE%D1%84%D1%82%D0%B0+%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F&submit=y&gender_section=women&base_materials=19&colors=615",
+    "https://www.lamoda.ru/catalogsearch/result/?q=%D0%BA%D0%BE%D1%84%D1%82%D0%B0+%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F&submit=y&gender_section=women&base_materials=19&colors=615&size_values=46",
+    "https://www.lamoda.ru/p/rtlaeq147301/clothes-creatorstudio-svitshot/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/header/div[2]/div/div/div[2]/div/div", "action": "type", "text": "кофта женская"},
+      {"step": 2, "x_path": "html/body/div[1]/div/header/div[2]/div/div/div[2]/div/button", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[2]/div/div/div/div", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[14]/div[2]/div[1]/div/div/div/div[1]/div/div[2]/div[2]/div[16]", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[14]/div[2]/div[1]/div/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[4]/div/div/div", "action": "click", "text": ""},
+      {"step": 7, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[14]/div[2]/div[1]/div/div/div/div[1]/div/div/div[2]/div[2]/div[2]/div/div", "action": "click", "text": ""},
+      {"step": 8, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[14]/div[2]/div[1]/div/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 9, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[4]/div/div/div", "action": "click", "text": ""},
+      {"step": 10, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[13]/div[2]/div[1]/div/div/div/div[1]/div/div/div[2]/div[7]/div/div", "action": "click", "text": ""},
+      {"step": 11, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[1]/div/div/div[13]/div[2]/div[1]/div/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 12, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[3]/div[2]/div[2]/div/div[1]/div/div[1]/a", "action": "click", "text": ""}
+    ]
+  },
+  {
+    "id": "lamoda_04",
+    "name": "Ламода: действия в мазазине",
+    "har_path": "benchmark_data/lamoda.har",
+    "start_url": "https://www.lamoda.ru/",
+    "type": "shopping",
+    "difficulty": "medium",
+    "goal": "В разделе 'Дом' зайди в раздел 'Столовая посуда'. С помощью фильтров выбери стеклянную посуду. Октрой первый вариант кувшина и закончи.",
+    "eval_type": "url_contains",
+    "eval_value": ["https://www.lamoda.ru/p/mp002xu058uj/home_accs-elangallery-kuvshin/"],
+    "checkpoints": [
+    "https://www.lamoda.ru/",
+    "https://www.lamoda.ru/home-home/?sitelink=topmenuW&l=10",
+    "https://www.lamoda.ru/c/6884/home_accs-posuda/",
+    "https://www.lamoda.ru/c/6884/home_accs-posuda/?base_materials=38",
+    "https://www.lamoda.ru/p/mp002xu058uj/home_accs-elangallery-kuvshin/"
+    ],
+    "trace": [
+      {"step": 1, "x_path": "html/body/div[1]/div/header/div[2]/div/div/div[1]/nav/a[10]", "action": "click", "text": ""},
+      {"step": 2, "x_path": "html/body/div[1]/div/main/section/div[2]/section/div/div/div[4]/a[1]", "action": "click", "text": ""},
+      {"step": 3, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div/div/div", "action": "click", "text": ""},
+      {"step": 4, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[11]/div[2]/div[1]/div/div/div/div[1]/div/div[2]/div[2]/div[11]/div/div", "action": "click", "text": ""},
+      {"step": 5, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div[11]/div[2]/div[1]/div/div/div/div[2]/button", "action": "click", "text": ""},
+      {"step": 6, "x_path": "html/body/div[1]/div/main/div/div[2]/div/div[2]/div[2]/div[2]/div/div[1]/div/div[1]/a", "action": "click", "text": ""}
+    ]
+  }
+]
