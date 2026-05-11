@@ -12,7 +12,7 @@ from openai import APITimeoutError, APIConnectionError, RateLimitError, Internal
 from benchmark.base_agent import BaseAgent
 
 load_dotenv()
-OPEN_ROUTER_MODEL = os.getenv("OPEN_ROUTER_MODEL", "gpt-4o-mini")
+OPEN_ROUTER_MODEL = os.getenv("OPEN_ROUTER_MODEL", "deepseek/deepseek-chat-v3.1")
 
 client = OpenAI(
     api_key=os.getenv("OPENROUTER_API_KEY"),
@@ -76,8 +76,7 @@ class OpenRouterAgent(BaseAgent):
 
         last = trajectory[-window:]
 
-        # 1) настоящий цикл: >= `repeat` одинаковых действий подряд в хвосте,
-        #    с учётом текста ввода и без учёта 'stop'
+        # Actual loop: >= repeat identical consecutive actions at the end of the history, considering input text but ignoring 'stop'.
         relevant = [
             s for s in last
             if s.get("action") not in (None, "stop")
@@ -88,7 +87,7 @@ class OpenRouterAgent(BaseAgent):
             if all(key(s) == key(tail[0]) for s in tail):
                 return True
 
-        # 2) три ошибки подряд
+        # 2) Three errors in a row
         errors_tail = [s.get("error") for s in last[-3:]]
         if len(errors_tail) == 3 and all(e is not None for e in errors_tail):
             return True
@@ -104,9 +103,6 @@ class OpenRouterAgent(BaseAgent):
     ) -> dict:
         """
         Execute the task on a web page.
-
-        runtime is accepted for compatibility with the benchmark,
-        but this agent does not use it.
         """
         self.reset()
         self.log_step(f"Start. Task: {goal}")
@@ -429,7 +425,7 @@ if __name__ == "__main__":
     # asyncio.run(
     #     run_benchmark_agent(
     #         "https://www.rzd.ru/",
-    #         "Начни покупку билета на поезд из Москвы в Санкт-Петербург c 26.03.2026 по 27.03.2026. После заполения необходимых полей нужно нажать Найти. Остановись на моменте оплаты"
+    #         "Начни покупку билета на поезд из Москвы в Санкт-Петербург c 26.06.2026 по 27.06.2026. После заполения необходимых полей нужно нажать Найти. Остановись на моменте оплаты"
     #     )
     # )
     pass

@@ -96,7 +96,7 @@ class BrowserUseAgent(BaseAgent):
     def _extract_reason(self, thought_obj: Any) -> str:
         """
         Try to build a readable step reason from browser-use thoughts.
-        Exact fields may vary by version, so we keep this flexible.
+        Exact fields may vary by version.
         """
         thought = self._to_python(thought_obj)
 

@@ -316,20 +316,6 @@ class BenchmarkRunner:
             async with async_playwright() as p:
                 browser, context, page, should_close_browser = await self._prepare_page(p)
 
-                # [CHANGE 1] Freeze Date to the HAR recording time so that
-                # date-sensitive UI (calendars, countdowns) renders as recorded.
-                # await context.add_init_script(f"""
-                #     const fakeNow = new Date('{fake_date}').getTime();
-                #     const NativeDate = window.Date;
-                #     window.Date = class extends NativeDate {{
-                #         constructor(...args) {{
-                #             if (args.length === 0) return new NativeDate(fakeNow);
-                #             return new NativeDate(...args);
-                #         }}
-                #         static now() {{ return fakeNow; }}
-                #     }};
-                # """)
-
                 # Attach HAR before navigation.
                 if har_file.exists():
                     await page.route_from_har(str(har_file), update=False)
@@ -362,7 +348,7 @@ class BenchmarkRunner:
                 result["usage"] = agent_result.get("usage", {})
                 result["extra"] = agent_result.get("extra", {})
 
-                # [CHANGE 2] Trajectory-based metrics: visited target URL + correct stop
+                # Trajectory-based metrics: visited target URL + correct stop
                 traj_eval = self._evaluate_trajectory(scenario, agent_result)
                 result["visited_eval_url"] = traj_eval["visited_eval_url"]
                 result["stopped_correctly"] = traj_eval["stopped_correctly"]
@@ -421,11 +407,9 @@ class BenchmarkRunner:
 
     async def _run_scenario_with_retry(self, scenario, max_attempts=5):
         """
-        Запускает один сценарий и автоматически повторяет его,
-        если он упал из-за транзиентной ошибки сети / LLM.
-
-        Не повторяет, если агент честно завершился (success=True),
-        упал в agent_stuck или исчерпал max_steps — иначе метрики будут завышены.
+        Runs a single scenario and automatically retries it if it fails due to a transient network
+        or LLM error.Does not retry if the agent completes successfully (success=True),
+        gets stuck (agent_stuck), or exceeds max_steps — otherwise, metrics would be inflated.
         """
         transient_markers = (
             "timed out", "timeout",
