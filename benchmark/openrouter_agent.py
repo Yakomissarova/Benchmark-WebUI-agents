@@ -3,7 +3,6 @@ import json
 import os
 import time
 from dotenv import load_dotenv
-
 import httpx
 from playwright.async_api import Page
 from openai import OpenAI
@@ -417,8 +416,6 @@ async def run_benchmark_agent(start_url, task_description):
         print(f"Final URL: {result['final_url']}")
         print(f"Duration: {result['timing']['duration_sec']} sec")
         print(f"Total tokens: {result['usage']['total_tokens']}")
-
-        # await browser.close()
 
 
 if __name__ == "__main__":
