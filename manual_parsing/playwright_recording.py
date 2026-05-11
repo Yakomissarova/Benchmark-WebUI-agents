@@ -47,21 +47,6 @@ async def record():
         browser = await p.chromium.launch(headless=False)
 
         context = await browser.new_context(record_har_path=RECORDING_CONFIG["har_path"])
-
-        # !!!DATE SCRIPT CAN BRAKE HAR, NEED FIX!!!
-        # await context.add_init_script(f"""
-        #     const fakeNow = new Date('{DATE}').getTime();
-        #     const NativeDate = window.Date;
-        #     window.Date = class extends NativeDate {{
-        #         constructor(...args) {{
-        #             if (args.length === 0) return new NativeDate(fakeNow);
-        #             return new NativeDate(...args);
-        #         }}
-        #         static now() {{ return fakeNow; }}
-        #     }};
-        # """)
-
-        context = await browser.new_context(record_har_path=RECORDING_CONFIG["har_path"])
         page = await context.new_page()
 
         await page.goto(RECORDING_CONFIG["start_url"])

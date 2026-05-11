@@ -6,21 +6,6 @@ async def run_mirror():
         browser = await p.chromium.launch(headless=False)
 
         context = await browser.new_context()
-        date = "2026-04-25T12:00:00Z"
-        # !!!DATE SCRIPT CAN BRAKE HAR, NEED FIX!!!
-        # await context.add_init_script(f"""
-        #     const fakeNow = new Date('{date}').getTime();
-        #     const NativeDate = window.Date;
-        #     window.Date = class extends NativeDate {{
-        #         constructor(...args) {{
-        #             if (args.length === 0) return new NativeDate(fakeNow);
-        #             return new NativeDate(...args);
-        #         }}
-        #         static now() {{ return fakeNow; }}
-        #     }};
-        # """)
-
-
         page = await context.new_page()
 
         # Reading from path not from Internet
